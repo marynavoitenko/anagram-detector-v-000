@@ -15,7 +15,6 @@ class Anagram
         @@anagrams << possibleanagram
       end
     end
-
     @@anagrams
   end
 

@@ -1,7 +1,6 @@
 require 'pry'
 class Anagram
   attr_accessor :word
-  # @@anagrams = []
 
   def initialize(word)
       @@anagrams = []
@@ -9,6 +8,7 @@ class Anagram
   end
 
   def match(possibleanagrams)
+    @@anagrams = []
     possibleanagrams.each do |possibleanagram|
       possible_arr = possibleanagram.split("")
       word_arr = self.word.split("")

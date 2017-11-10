@@ -1,9 +1,10 @@
 require 'pry'
 class Anagram
   attr_accessor :word
-  @@anagrams = []
+  # @@anagrams = []
 
   def initialize(word)
+      @@anagrams = []
     @word = word
   end
 

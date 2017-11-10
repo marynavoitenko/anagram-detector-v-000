@@ -11,9 +11,8 @@ class Anagram
     possibleanagrams.each do |possibleanagram|
       possible_arr = possibleanagram.split("")
       word_arr = self.word.split("")
-      if possible_arr <=> word_arr
+      if (possible_arr <=> word_arr) && !(@@anagrams.include?(self.word))
         @@anagrams << self.word
-
       end
 
     end

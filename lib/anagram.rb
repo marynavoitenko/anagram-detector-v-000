@@ -12,7 +12,7 @@ class Anagram
       possible_arr = possibleanagram.split("")
       word_arr = self.word.split("")
       if possible_arr.sort == word_arr.sort
-        @@anagrams << self.word
+        @@anagrams << possible_arr
       end
     end
 

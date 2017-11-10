@@ -14,9 +14,8 @@ class Anagram
       if possible_arr.sort == word_arr.sort
         @@anagrams << self.word
       end
-
     end
-
+    binding.pry
     @@anagrams
   end
 
